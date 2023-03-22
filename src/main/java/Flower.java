@@ -23,7 +23,7 @@ public class Flower {
             driver.get("http://demo.automationtesting.in/Register.html");
         driver.manage().window().maximize();
         WebElement email_create = driver.findElement(By.xpath("//*[@id=\"email\"]"));
-        email_create.sendKeys("hadeel.93@hotmail.co.il");
+        email_create.sendKeys("ha*****@hotmail.co.il");
         WebElement entering = driver.findElement(By.xpath("//*[@id=\"enterimg\"]"));
         entering.click();
         WebElement Firstname = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[1]/div[1]/input\n"));
@@ -33,9 +33,9 @@ public class Flower {
         WebElement adress = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[2]/div/textarea"));
         adress.sendKeys("Arraba, Isreal");
         WebElement Email = driver.findElement(By.xpath("//*[@id=\"eid\"]/input"));
-        Email.sendKeys("hadeel.93@hotmail.co.il");
+        Email.sendKeys("ha*******@hotmail.co.il");
         WebElement Phone = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[4]/div/input"));
-        Phone.sendKeys("0526457609");
+        Phone.sendKeys("052******");
         WebElement gender = driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[5]/div/label[2]/input"));
         gender.click();
         WebElement hobbies = driver.findElement(By.xpath("//*[@id=\"checkbox2\"]"));
@@ -71,9 +71,9 @@ public class Flower {
         WebElement day1 = driver.findElement(By.xpath("//*[@id=\"daybox\"]/option[5]"));
         day1.click();
         WebElement password = driver.findElement(By.xpath("//*[@id=\"firstpassword\"]"));
-        password.sendKeys("Hadeel123*");
+        password.sendKeys("123*");
         WebElement confirmpassword = driver.findElement(By.xpath("//*[@id=\"secondpassword\"]"));
-        confirmpassword.sendKeys("Hadeel123*");
+        confirmpassword.sendKeys("123*");
         WebElement submit = driver.findElement(By.xpath("//*[@id=\"submitbtn\"]"));
         submit.click();
             return driver.getTitle();
